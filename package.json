@@ -4,11 +4,16 @@
   "description": "API Node.JS aplicando TDD",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll",
+    "test:staged": "jest"
+  },
+  "standard": {
+    "env": ["jest"]
   },
   "author": "Diego Ferreira L.G.Oliveira",
   "license": "MIT",
   "devDependencies": {
+    "express": "^4.17.1",
     "husky": "^4.2.5",
     "jest": "^26.1.0",
     "lint-staged": "^10.2.11",
