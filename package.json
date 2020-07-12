@@ -4,8 +4,11 @@
   "description": "API Node.JS aplicando TDD",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll",
-    "test:staged": "jest --passWithNoTests"
+    "test": "jest --silent --verbose --noStackTrace --passWithNoTests",
+    "test:unit": "yarn test -- --verbose --watch -c jest-unit-config.js",
+    "test:integration": "yarn test -- --verbose --watch -c jest-integration-config.js",
+    "test:staged": "yarn test -- --findRelatedTests",
+    "test:ci": "yarn test -- --coverage"
   },
   "standard": {
     "env": ["jest"]
