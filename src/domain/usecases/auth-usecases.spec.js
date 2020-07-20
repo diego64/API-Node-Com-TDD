@@ -78,7 +78,6 @@ const makeUpdateAccesstokenRepository = () => {
   return new UpdateAccesstokenRepositorySpy()
 }
 
-
 const makeUpdateAccesstokenRepositoryWithError = () => {
   class UpdateAccesstokenRepositorySpy {
     async update () {
