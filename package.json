@@ -2,13 +2,15 @@
   "name": "nodetdd",
   "version": "1.0.0",
   "description": "API Node.JS aplicando TDD",
-  "main": "index.js",
+  "main": "src/main/index.js",
   "scripts": {
+    "start": "nodemon src/main/index.js",
     "test": "jest --verbose --noStackTrace --passWithNoTests",
     "test:unit": "yarn test -- --watchAll -c jest-unit-config.js",
     "test:integration": "yarn test -- --verbose --watch -c jest-integration-config.js",
-    "test:staged": "yarn test",
-    "test:ci": "yarn test -- --coverage --silent"
+    "test:staged": "yarn test -- --findRelatedTests",
+    "test:ci": "yarn test -- --coverage --silent",
+    "test:coveralls": "yarn test:ci && coveralls < coverage/lcov.info"
   },
   "standard": {
     "env": [
@@ -19,14 +21,17 @@
   "license": "MIT",
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.2.1",
-    "express": "^4.17.1",
     "husky": "^4.2.5",
     "jest": "^26.1.0",
     "lint-staged": "^10.2.11",
-    "standard": "^14.3.4"
+    "nodemon": "^2.0.4",
+    "standard": "^14.3.4",
+    "supertest": "^4.0.2"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
+    "express": "^4.17.1",
+    "fast-glob": "^3.2.4",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.5.9",
     "validator": "^13.1.1"
