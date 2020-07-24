@@ -25,9 +25,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 📦 Projeto
 
-Testes em aplicações é uma das fazes mais importante no processo de desenvolvimento de um sistema. Durante essas últimas semanas foquei em me aprofundar em em TDD. Desenvolvi uma aplicação back-end com Node.Js com a função de cadastrar e validar usuários mas antes de começar a desenvolver as rotas e escolher o banco de dados,  realizei alguns testes simulando diversas situações que vão de falhas no desenvolvimento ou possíveis erros de envio de dados.
+Testes em aplicações é uma das fases mais importante no processo de desenvolvimento de um sistema. Durante essas últimas semanas foquei em me aprofundar em em TDD. Desenvolvi uma aplicação backend com Node.Js com a função de cadastrar e validar usuários mas antes de começar a desenvolver as rotas e escolher o banco de dados,  realizei alguns testes simulando diversas situações que vão de falhas no desenvolvimento ou possíveis erros de envio de dados.
 
-A API utiliza o Jest como principal depedencia no desenvolvimento. Atravéis dela é possivél desenvolver testes personalizados em cima de uma situção. Já o Huskyrc, permiti dentre várias opções, realizar testes antes de realizar um commit ou push dando total certeza que a sua aplicação está testada e funcionando conforme o esperado. 
+A API utiliza o Jest como principal dependência no desenvolvimento. Através dela é possível desenvolver testes personalizados em cima de uma situação criada pelo desenvolvedor. Já o Huskyrc, permiti dentre várias opções, realizar testes antes de realizar um commit ou push dando total certeza que a sua aplicação está testada e funcionando conforme o esperado.
 
 ## 🎯 Resumo dos conceitos
 
