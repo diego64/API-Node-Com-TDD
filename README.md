@@ -46,7 +46,7 @@ A API utiliza o Jest como principal dependência no desenvolvimento. Através de
 
 O projeto foi divido em 12 partes: 
 
-- Melhorando as configurações do Jest
+- Ajustando as configurações do Jest (Adcionando somente as funcionalidades que o projeto irá utilizar)
 - Configurando os arquivos de config para os testes de integração e unitários
 - Restruturação de pastas e criação de teste unitários em cima da classe de validação do email
 - Criação da classe authUseCase, reoganização da estrutura de pasta e refatoração do cógigo
